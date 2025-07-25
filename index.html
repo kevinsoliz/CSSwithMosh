@@ -4,20 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
-    <style></style>
+    <link rel="stylesheet" href="styles.css" />
+    <!--rel: relationship-->
+    <style>
+      p {
+        color: black;
+      }
+      #first {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <main>
       <section>
+        <h1>Tipos</h1>
         <ul>
           <li>Embbed CSS</li>
           <li>External CSS</li>
           <li>Inline CSS</li>
         </ul>
+        <p>
+          Esto no significa que nunca haya que usar embebed styles, las puedes
+          usar para override los estilos
+        </p>
       </section>
       <section>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p style="color: blue; font-weight: bold">
+          Este es un ejemplo de CSS inline. No es recomendable usarlo para
+          estilos generales, viola el principio de Separation of concerns y
+          dificulta el mantenimiento del código.
+        </p>
+        <p id="first">
+          Es mejor hacerlo asi: usando un id para casos específicos.
+        </p>
       </section>
       <section>
         <h2>SE Principle: Separation of concerns</h2>
@@ -27,6 +47,13 @@
           embebido en lugar de inline. El CSS inline es más difícil de mantener
           y no se puede reutilizar fácilmente. Además, el CSS inline puede
           causar problemas de rendimiento y accesibilidad.
+        </p>
+      </section>
+      <section>
+        <h2>Publicar en gitHub</h2>
+        <p>
+          Inicializar repositorio y paleta de comandos: shif + cmd + p: Publish
+          to gitHub
         </p>
       </section>
     </main>
