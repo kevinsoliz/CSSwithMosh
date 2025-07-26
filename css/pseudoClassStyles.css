@@ -1,9 +1,48 @@
 body {
     margin: 10px;
-    background-color: aqua;
-}
 
-article .first{
+}
+/*Esto es un pseudo-class selector
+article :first-child {
     font-size: 140%;
     font-style: italic
+}
+article :first-of-type{
+    font-size: 140%;
+    font-style: italic
+}*/
+article p:first-of-type{
+    font-size: 140%;
+    font-style: italic
+}
+
+article p:last-of-type{
+    font-weight: bold;
+}
+article p:last-child{
+    font-weight: bold;
+}
+article :last-child{
+    font-weight: bold;
+}
+
+/*
+ul li:nth-child(odd) {
+    background-color: lightblue;
+}
+ul li:nth-child(3n) { cada 3 elementos
+    background-color: lightblue;
+}
+    */
+ul li:nth-child(even) {
+    background-color: lightblue;
+}
+
+a:visited,
+a:link {
+    color: dodgerblue
+}
+
+a:hover{
+    color: deeppink
 }
