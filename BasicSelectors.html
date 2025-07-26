@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Basic Selectors</title>
+  </head>
+  <body>
+    <header>
+      <h1>Basic Selectors in CSS</h1>
+    </header>
+    <main>
+      <section>
+        <h2>What are Basic Selectors?</h2>
+        <p>
+          Basic selectors in CSS allow you to select elements based on their
+          type, class, ID, and attributes. They are fundamental for styling HTML
+          documents.
+        </p>
+      </section>
+      <section>
+        <h2>Types of Basic Selectors</h2>
+        <ul>
+          <li>
+            <strong>Type Selector:</strong> Selects elements by their tag name.
+          </li>
+          <li>
+            <strong>Class Selector:</strong> Selects elements with a specific
+            class.
+          </li>
+          <li>
+            <strong>ID Selector:</strong> Selects a single element with a
+            specific ID.
+          </li>
+          <li>
+            <strong>Attribute Selector:</strong> Selects elements based on the
+            presence or value of an attribute.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <p>
+          Ahora un poco de Zen coding: section#products, te crea la seccion con
+          su id!
+        </p>
+        <p>article.product*3: te crea 3 articulos con clase producto.</p>
+        <p>
+          La diferencia entre id y class es que podemos tener muchos elementos
+          con el mismo class, pero un id pertenece a un solo elemento.
+        </p>
+      </section>
+      <section id="products">
+        <article class="product"></article>
+        <article class="product"></article>
+        <article class="product"></article>
+      </section>
+      <article>
+        <p>La selección por atributos es una mala costumbre.</p>
+        <a href="https://google.com" target="_blank">Google</a>
+      </article>
+    </main>
+  </body>
+</html>

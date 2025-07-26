@@ -4,3 +4,19 @@ body {
 p {
     color: blue;
 }
+
+#products{}
+
+.product{}
+
+a[target="_blank"] {
+    color: red;
+}
+/*La seleccion por atributos es muy frágil*/
+a[href="https://www.google.com"] {
+    color: green;
+} 
+/*Puedes solucionarlo asi:*/
+a[href*="google"] {
+    color: green;
+}
