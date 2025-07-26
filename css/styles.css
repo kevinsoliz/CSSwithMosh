@@ -14,9 +14,21 @@ a[target="_blank"] {
 }
 /*La seleccion por atributos es muy frágil*/
 a[href="https://www.google.com"] {
-    color: green;
+    color:red;
 } 
-/*Puedes solucionarlo asi:*/
+/*Puedes solucionarlo asi, para todos los enlaces que contienen la palabra google:*/
 a[href*="google"] {
     color: green;
+}
+/*Para todos los enlaces que empiezan con https://*/
+a[href^="https"]{
+    color: orange;
+}
+/*Para todos los enlaces que terminan con .com*/
+a[href$=".com"] {
+    color: purple;
+}
+/*Incluso se pueden hacer combinaciones de los selectores de atributos*/
+a[href^="https"][href$=".com"] {
+    color: brown;
 }
