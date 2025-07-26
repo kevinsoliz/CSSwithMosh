@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relational Selectors</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/relationalStyles.css" />
+  </head>
+  <body>
+    <section id="products">
+      <p>
+        Esto es un descendant selector. p no lleva ningún id, lo seleccionamos
+        desde el id del padre. Si solo queremos que el primer párrafo tenga un
+        color diferente, podemos usar el selector de hijo directo con el simbolo
+        >.
+      </p>
+      <article>
+        <p>Esto también va a estar en naranaja.</p>
+      </article>
+    </section>
+    <p>
+      Este es el hermano directo de section, no aplica al siguiente párrafo.
+    </p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>
+      si queremos que todos los párrafos hermanos de section tengan el mismo
+      color usamos el simboloe ~. Este es un sibling selector.
+    </p>
+    <article>
+      <h3>Relational selectors</h3>
+      <ul>
+        <li>Ventaja: Cleaner markup</li>
+        <li>
+          Desventaja: Can be fragile, dependen del location of this elements in
+          the DOM.
+        </li>
+        <li>
+          Desventaja: Not as fast as basic selectors: a pesar de que la
+          diferencia es despreciable, debido a que los browsers leen los
+          algoritmos de derecha a izquierda, los selectores de tipo relational
+          son más lentos que los selectores básicos. Aunque debes recorda
+          también: <i>Premature optimization is the root of all evil.</i> Donald
+          Knuth.
+        </li>
+        <li>
+          Si estás seguro de que las posiciones de estos elementos no van a
+          cambiar, puedes usar los relational selectors sin problemas.
+        </li>
+      </ul>
+    </article>
+    <article>
+      <p>
+        No optimices por adelantado. Optimiza cuando tienes pruebas claras de
+        que lo necesitas. Entonces, ¿qué deberías hacer? Primero: haz que
+        funcione. Segundo: haz que el código sea limpio, claro y mantenible.
+        Luego, si es necesario: hazlo más rápido (optimizando solo lo
+        necesario).
+      </p>
+    </article>
+  </body>
+</html>
