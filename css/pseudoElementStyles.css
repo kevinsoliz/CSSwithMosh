@@ -1,0 +1,39 @@
+body {
+    margin: 10px;
+}
+
+.first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+/* Usamos double colon para pseudo-elementos y one colon for pseudo classes.*/ 
+p::first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+/* Para cambiar el color de la selección de texto */
+p::selection {
+    background-color: pink;
+}
+
+/* Si queremos que se apliqe a todo el documento */
+::selection {
+    background-color: rgb(186, 92, 214);
+}
+
+/* Para insertar contenido antes o después de un elemento */
+p::before {
+    content: "...";
+    /* Podemos agregar un  block level element: ocupa toda una línea */
+    display: block;
+}
+p::after {
+    content: "Fin";
+    font-weight: bold;
+    display: block;
+}
