@@ -3,7 +3,7 @@ body {
 }
 
 p {
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: dodgerblue !important;
 }
 
@@ -32,6 +32,17 @@ h1#products {
 
 .featured #products {
     color: rgb(0, 255, 0);
+}
+
+#inheritance {
+    color: blue;
+    border: 1px solid black;
+}
+/* Si quieres que no se herede, usa initial */
+strong {
+    color: initial;
+    /*Para forzar la herencia de border, usa inherit*/
+    border: inherit;
 }
 
 
