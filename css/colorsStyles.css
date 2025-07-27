@@ -1,0 +1,16 @@
+body {
+    margin: 10px;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    /* Usamos la funcion rgb() para definir el color de fondo entre 0 y 255*/
+    /* si quieres transparencia, puedes usar rgba() entre 0 y 1 */
+    background-color: rgba(201, 15, 15, 0.5);
+    /* Puedes usar el formato hexadecimal, pero este no tiene el canal alpha. */
+    /* Tambien puedes usar la función hsl() para definir el color */
+    /* y puedes usar hsla() para definir el color con transparencia */
+    background-color: hsla(82, 53%, 39%, 0.5);
+
+    
+}
