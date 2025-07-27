@@ -1,0 +1,37 @@
+body {
+    margin: 10px;
+}
+
+p {
+    font-weight: bold;
+    color: dodgerblue !important;
+}
+
+h1 {
+    color: dodgerblue ;
+}
+
+.highlight {
+    color: pink;
+}
+#products {
+    color: green;
+}
+/* Entre selectores de igual rango, el último es el que prevalece */
+#products {
+    color: rgb(100, 12, 66);
+}
+
+#products.highlight{
+    color: rgb(165, 49, 103);
+}
+
+h1#products {
+    color: rgb(255, 0, 0);
+}
+
+.featured #products {
+    color: rgb(0, 255, 0);
+}
+
+

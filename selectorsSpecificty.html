@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors Specificty</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/selectorsSpecifictyStyles.css" />
+  </head>
+  <body>
+    <article>
+      <h1 class="highlight">Heading</h1>
+      <p>En ese orden:</p>
+      <ol>
+        <li>ID selectors</li>
+        <li>Classes & atributes</li>
+        <li>Elements</li>
+      </ol>
+    </article>
+    <h1 id="products" class="highlight">Heading</h1>
+    <p>Selector Specificity: 0, 0, 1</p>
+    <ol>
+      <li>Número de selectores de id.</li>
+      <li>Número de selectores de clases</li>
+      <li>Number of element selectors</li>
+    </ol>
+    <p>
+      Estos se suman y el mayor prevalece. Podemos usar el keyword !important
+      para forzar un estilo, pero no es recomendable. Se considera una mala
+      práctica porque puede dificultar el mantenimiento del código. Es mejor
+      usar selectores específicos y bien estructurados.
+    </p>
+    <article class="featured">
+      <h1 id="products" class="highlight">Heading</h1>
+    </article>
+  </body>
+</html>
