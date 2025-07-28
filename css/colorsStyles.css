@@ -14,3 +14,34 @@ body {
 
     
 }
+
+/* Gradients */
+.box2 {
+    width: 200px;
+    height: 200px;
+    /* deberiamos usar background-image en lugar de background-color o
+    background */
+    background: linear-gradient(dodgerblue, yellow);
+    /* por defecto, el gradiente es de arriba hacia abajo, pero podemos
+    cambiarlo con el parametro to */
+    background: linear-gradient(to right, dodgerblue, yellow);
+    background: linear-gradient(to bottom right, dodgerblue, yellow);
+    /* También podemos especificar los grados del gradiente para más control.*/
+    background: linear-gradient(45deg, dodgerblue, yellow);
+    /* También podemos definir el porcentaje de los colores en el gradiente */
+    background: linear-gradient(45deg, dodgerblue 0%, yellow 90%);
+    /* También podemos usar múltiples colores en el gradiente */
+    background: linear-gradient(45deg, dodgerblue, yellow, tomato);
+    /* También tienes el radial: */
+    background: radial-gradient(circle, dodgerblue, yellow, tomato);
+    /* declaramos el circle, porque si no por defecto tomará la forma de la cja, si deja
+    de ser cuadrada, tomará la forma de un elipse */
+    background: radial-gradient(circle at top left, dodgerblue, yellow);
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+  background: radial-gradient(circle, #ff7e5f, #ddf767);
+  background-color: #ff7e5f; /* Fallback color */
+}

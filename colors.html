@@ -23,6 +23,40 @@
         <li>Decimal de 0 a 9.</li>
         <li>Hexadecimal de 0 a 9 y de a - f.</li>
       </ul>
+      <section>
+        <h1>Gradients</h1>
+        <div class="box2"></div>
+        <p>Aquí tienes un gradient generator:</p>
+        <a href="https://cssgradient.io/">Pincha aquí.</a>
+        <p>
+          Hay navegadores que no soportan gradientes asi que tendras que poner
+          un color plano de fondo como fallback.
+        </p>
+        <p>Por ejemplo:</p>
+        <pre>
+.box2 {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background-color: #ff7e5f; /* Fallback color */
+}
+        </pre>
+        <p>
+          En este caso, si el navegador no soporta gradientes, se mostrará el
+          color #ff7e5f como fondo.
+        </p>
+        <p>
+          Los gradientes lineales se crean con la función
+          <code>linear-gradient()</code>, mientras que los radiales se crean con
+          la función <code>radial-gradient()</code>.
+        </p>
+        <p>Por ejemplo, un gradiente radial se vería así:</p>
+
+        <div class="box3"></div>
+
+        <p>
+          En este caso, el gradiente radial se extiende desde el centro hacia
+          afuera, creando un efecto de transición circular entre los colores.
+        </p>
+      </section>
     </main>
   </body>
 </html>
