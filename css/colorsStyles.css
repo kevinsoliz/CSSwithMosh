@@ -45,3 +45,28 @@ body {
   background: radial-gradient(circle, #ff7e5f, #ddf767);
   background-color: #ff7e5f; /* Fallback color */
 }
+
+.border {
+    width: 600px;
+    height: 600px;
+    background: dodgerblue;
+    /* Takes three values: width, style, and color */
+    border: 10px dashed royalblue;
+    /* You can also use border-top, border-right, border-bottom, and border-left
+    y el orden importa, tambiñen puedes usar border-width */
+    border-top: 20 solid royalblue; /* por lo general se usa este formato,
+    solo ten en cuenta que tienes control de modificar todos los parámetros. */
+    border-width: 10px, 20px; /* trbl: turbol, asi lo recuerdas */
+    /* para el radio puedes usar px y % */
+    border-radius: 10px;;
+    border-radius: 100%;
+
+}
+
+#triangle-topright {
+      width: 0;
+      height: 0;
+      border-top: 100px dashed transparent;
+      border-right: 100px solid blue;
+    }
+    
