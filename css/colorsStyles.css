@@ -69,4 +69,23 @@ body {
       border-top: 100px dashed transparent;
       border-right: 100px solid blue;
     }
-    
+
+.shadow {
+    width: 500px;
+    height: 200px;
+    background: rgb(240, 232, 16);
+    /* the first value is the horizontal offset, the second is the vertical offset,
+    the third is the blur radius, and the fourth is the spread radius */
+    /* is usas positivos, el shadow se desplaza hacia la derecha y hacia abajo,
+    si usas negativos, se desplaza hacia la izquierda y hacia arriba */
+    box-shadow: 10px 10px grey;
+    /* si quieres tener un soft shadow, you have to put the shadow right below the element */
+    box-shadow: 0 0 30px grey;
+}
+
+h1#heading {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    /*Las fucking comas, no las pongas, porque no son necesarias */
+    text-shadow: 3px 3px 10px rgba(134, 8, 8, 0.2);
+}
