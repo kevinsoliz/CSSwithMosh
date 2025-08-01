@@ -1,3 +1,8 @@
-.meal {
-  width: 100vw;
+body {
+  background: url(../images/bg-sanfrancisco.jpg);
+  background-repeat: no-repeat; /* repeat-x*/
+  /*background-position: 100% 0; horizontal vertical */
+  background-size: cover; /* desaparece porque body (blocklevel element) su height es 0 por defecto, también puedes usar cover*/
+  height: 300vh;
+  background-attachment: fixed;
 }
