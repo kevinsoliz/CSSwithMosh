@@ -1,10 +1,11 @@
 body {
-  /*background: url(../images/bg-sanfrancisco.jpg);*/
+  background: url(../images/constellation.svg);
   background-repeat: no-repeat; /* repeat-x*/
   /*background-position: 100% 0; horizontal vertical */
   background-size: cover; /* desaparece porque body (blocklevel element) su height es 0 por defecto, también puedes usar cover*/
   height: 300vh;
   background-attachment: fixed;
+  color: aliceblue;
 }
 
 .bg-rocketship {
@@ -61,7 +62,7 @@ body {
   filter: grayscale(100%) blur(2px); /*puedes poner más propiedades*/
 }
 
-.meal-3 {
+.meal-3  {
   width: 400px;
 }
 
