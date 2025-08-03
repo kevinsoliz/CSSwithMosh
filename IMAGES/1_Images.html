@@ -123,7 +123,10 @@
       />
       <!-- si el tamaño del viewport es 500px la imagen tendrá ancho vw, 
        son condionales, el último no lleva nada por que es un else-->
-       <p>La mejor manera de decide on the sizes and generate image assets is using <a href="https://www.responsivebreakpoints.com/">this website.</a></p>
+      <p>
+        La mejor manera de decide on the sizes and generate image assets is
+        using <a href="https://www.responsivebreakpoints.com/">this website.</a>
+      </p>
     </section>
     <section>
       <h1>Modern images formats</h1>
@@ -132,17 +135,39 @@
         <li>Phtoshop con WebPShop plug-in</li>
         <li>Sketch: viene por defecto</li>
         <li>Online tools como <a href="https://cloudconvert.com/">esta.</a></li>
-        <li>Command line tools: si quieres automatizar el proceso de conversión.</li>
+        <li>
+          Command line tools: si quieres automatizar el proceso de conversión.
+        </li>
       </ul>
-      <p>Es mejor usar webp porque el tamaño del archivo es mucho más pequeño.</p>
-      <img src="images/meal2.webp" alt="" class="webP">
-      <img src="images/meal.jpg" alt="">
+      <p>
+        Es mejor usar webp porque el tamaño del archivo es mucho más pequeño.
+      </p>
+      <img src="images/meal2.webp" alt="" class="webP" />
+      <img src="images/meal.jpg" alt="" />
       <!--Para que lo soporten todos los browsers: -->
       <picture>
-        <source type="image/webp" srcset="images/meal2.webp 1x, images/meal@2x.webp 2x">
-        <source type="image/jpeg" srcset="images/meal.jpg">
+        <source
+          type="image/webp"
+          srcset="images/meal2.webp 1x, images/meal@2x.webp 2x"
+        />
+        <source type="image/jpeg" srcset="images/meal.jpg" />
         <!--Esto debes añadirlo siempre: puede que no haya browsere que soporten ni picture ni img-->
-        <img src="images/meal.jpg" alt="A bowl of salmon and curry">
+        <img src="images/meal.jpg" alt="A bowl of salmon and curry" />
+      </picture>
+    </section>
+    <section>
+      <h2>Art direction</h2>
+      <p>
+        Puede que en ordenador quieras que se vea la imagen completa pero en
+        móviles esta esté recortada:
+      </p>
+      <picture>
+        <source
+          media="(max-width: 500px)"
+          srcset="images/meal-cropped.jpg 1x, images/meal-cropped@2x.jpg 2x"
+        />
+        <source media="(min-width: 501px)" srcset="images/meal.jpg" />
+        <img src="images/meal.jpg" alt="" />
       </picture>
     </section>
   </body>
