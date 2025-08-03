@@ -73,3 +73,9 @@ body {
 .webP {
   border-radius: 1rem;
 }
+
+
+.icon {
+  font-size: 2rem;
+  color: gold;
+}
