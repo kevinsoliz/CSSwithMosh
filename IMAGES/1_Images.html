@@ -104,20 +104,25 @@
       <h1>Resolution Switching</h1>
       <p>
         Hay que proporcionar imágenes al browser para diferentes tamaños de
-        pantalla, pixel ratio of the screen y resoluciones. Proporcionamos tres small, medium and large y
-        el browser se encarga de elegir.
+        pantalla, pixel ratio of the screen y resoluciones. Proporcionamos tres
+        small, medium and large y el browser se encarga de elegir.
       </p>
       <img
         src="images/meal.jpg"
         alt="A bowl of salmon and curry"
         class="meal-4"
         srcset="
-          images/meal.jpg      400w,
-          images/meal@2x.jpg   800w,
+          images/meal.jpg     400w,
+          images/meal@2x.jpg  800w,
           images/meal@3x.jpg 1200w
         "
+        sizes="
+        (max-width: 500px) 100vw,
+        (max-width: 700px) 50vw,
+        33vw"
       />
-      <!-- con 400w le estás diciendo al browser el ancho de la imagen-->
+      <!-- si el tamaño del viewport es 500px la imagen tendrá ancho vw, 
+       son condionales, el último no lleva nada por que es un else-->
     </section>
   </body>
 </html>
