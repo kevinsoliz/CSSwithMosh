@@ -56,3 +56,7 @@ body {
     100% 0%
   );
 }
+
+.meal-two:hover {
+  filter: grayscale(100%) blur(2px); /*puedes poner más propiedades*/
+}
