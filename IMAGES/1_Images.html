@@ -137,6 +137,13 @@
       <p>Es mejor usar webp porque el tamaño del archivo es mucho más pequeño.</p>
       <img src="images/meal2.webp" alt="" class="webP">
       <img src="images/meal.jpg" alt="">
+      <!--Para que lo soporten todos los browsers: -->
+      <picture>
+        <source type="image/webp" srcset="images/meal2.webp 1x, images/meal@2x.webp 2x">
+        <source type="image/jpeg" srcset="images/meal.jpg">
+        <!--Esto debes añadirlo siempre: puede que no haya browsere que soporten ni picture ni img-->
+        <img src="images/meal.jpg" alt="A bowl of salmon and curry">
+      </picture>
     </section>
   </body>
 </html>
