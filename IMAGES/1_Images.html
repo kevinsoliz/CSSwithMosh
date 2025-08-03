@@ -61,7 +61,63 @@
         <li>Saturate</li>
       </ul>
       <img src="images/meal.jpg" class="meal-two" alt="" />
-
+    </section>
+    <section>
+      <h2>Supporting High Density Screens</h2>
+      <h3>Terms</h3>
+      <h4>Physical resolution</h4>
+      <p>Based on the actual number of pixels on the device.</p>
+      <h4>Logical resolution</h4>
+      <p>How they behave. Un CSS is always based in a logical resolution.</p>
+      <h4>Device Pixel Ratio DPR</h4>
+      <p>The ratio of physical to logical pixels.</p>
+      <h4>High Density Screen</h4>
+      <p>
+        Screen with DPR &gt; 1 which means we have more physical pixels than
+        logical pixels.
+      </p>
+      <p>
+        Hay una convención para nombrar las imagenes con DPR diferente:
+        meal@3x...
+      </p>
+      <p>
+        A la hora de redimensionar con photoshop: desde el tamaño más grande 3x:
+        12000, 2x: 800, 1x: 400
+      </p>
+      <img
+        src="images/meal.jpg"
+        alt="A bowl of salmon and curry"
+        class="meal-3"
+        srcset="
+          images/meal.jpg    1x,
+          images/meal@2x.jpg 2x,
+          images/meal@3x.jpg 3x
+        "
+      />
+      <img
+        src="images/meal.jpg"
+        alt="A bowl of salmon and curry"
+        class="meal-3"
+      />
+    </section>
+    <section>
+      <h1>Resolution Switching</h1>
+      <p>
+        Hay que proporcionar imágenes al browser para diferentes tamaños de
+        pantalla, pixel ratio of the screen y resoluciones. Proporcionamos tres small, medium and large y
+        el browser se encarga de elegir.
+      </p>
+      <img
+        src="images/meal.jpg"
+        alt="A bowl of salmon and curry"
+        class="meal-4"
+        srcset="
+          images/meal.jpg      400w,
+          images/meal@2x.jpg   800w,
+          images/meal@3x.jpg 1200w
+        "
+      />
+      <!-- con 400w le estás diciendo al browser el ancho de la imagen-->
     </section>
   </body>
 </html>

@@ -60,3 +60,7 @@ body {
 .meal-two:hover {
   filter: grayscale(100%) blur(2px); /*puedes poner más propiedades*/
 }
+
+.meal-3 {
+  width: 400px;
+}
