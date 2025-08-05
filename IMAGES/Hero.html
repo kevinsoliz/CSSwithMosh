@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/exercise.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=callback"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="hero">
+      <h1>HUBBLE SPACE TELESCOPE</h1>
+      <img
+        src="universelarge.jpg"
+        srcset="
+          universe/universelarge_juugpr_c_scale,w_320.jpg   320w,
+          universe/universelarge_juugpr_c_scale,w_918.jpg   918w,
+          universe/universelarge_juugpr_c_scale,w_1381.jpg 1381w,
+          universelarge.jpg                                1920w
+        "
+        sizes="
+          (max-width: 500px) 100vw,
+          (max-width: 700px) 100vw,
+          100vw"
+        alt=""
+      />
+      <div class="tagline">
+        <p>30 Years of Discovery</p>
+      </div>
+    </section>
+  </body>
+</html>

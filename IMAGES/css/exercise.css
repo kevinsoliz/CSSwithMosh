@@ -1,0 +1,51 @@
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.hero h1 {
+    font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  z-index: 1;
+  word-spacing: 10px;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+}
+
+.tagline {
+    z-index: 1;
+}
+
+.tagline p {
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.332);
+    padding: 0.3rem;
+}
+
+@media screen and (min-width: 700px){
+    html {
+        font-size: 120%;
+    }
+}
+@media screen and (min-width: 1024px){
+    html {
+        font-size: 140%;
+    }
+}
