@@ -67,58 +67,70 @@
         </optgroup>
       </select>
     </form>
-    <form >
-        <div>
-            <input type="checkbox" id="front-end" disabled>
-            <label class="label-inline" for="front-end">Front-end</label>
-        </div> <!--esa clase está en la documentación de milligram-->
-        <div>
-            <input type="checkbox" id="back-end" checked>
-            <label class="label-inline" for="back-end">Back-end</label>
-        </div> 
-    </form>
-    <form >
-        <div>
-            <input type="radio" name="membership" id="silver">
-            <label for="silver" class="label-inline">Silver</label>
-        </div>
-        <div>
-            <input type="radio" name="membership" id="gold">
-            <label for="gold" class="label-inline">Gold</label>
-        </div>
+    <form>
+      <div>
+        <input type="checkbox" id="front-end" disabled />
+        <label class="label-inline" for="front-end">Front-end</label>
+      </div>
+      <!--esa clase está en la documentación de milligram-->
+      <div>
+        <input type="checkbox" id="back-end" checked />
+        <label class="label-inline" for="back-end">Back-end</label>
+      </div>
     </form>
     <form>
-        <input type="range" min="0" max="100" value="90">
-    </form>
-    <form >
-        <input type="file" multiple>
-        <input type="file" accept=".jpg, .png">
-        <input type="file" accept="image/*">
-        <input type="file" accept="video/*">
-        <input type="file" accept="audio/*">
-    </form>
-    <form >
-        <fieldset>
-            <legend>Billing Adress</legend>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-        </fieldset>
-        <fieldset>
-            <legend>Payment</legend>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-        </fieldset>
+      <div>
+        <input type="radio" name="membership" id="silver" />
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="gold" />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
     </form>
     <form>
-        <input type="hidden" name="course-id" value="1234"> <!--para el servidor, nunca guardes sensitive values aqui porque se ven en el browser, usamos hidden for store the ID of content being edited.-->
+      <input type="range" min="0" max="100" value="90" />
     </form>
     <form>
-        <input type="text" required minlength="3" maxlength="10"><!--usa el maxlength sobretodo-->
-        <button type="submit">Submit</button>
-        <input type="number" required min="0" max="5">
-        <button type="submit">Submit</button>
+      <input type="file" multiple />
+      <input type="file" accept=".jpg, .png" />
+      <input type="file" accept="image/*" />
+      <input type="file" accept="video/*" />
+      <input type="file" accept="audio/*" />
+    </form>
+    <form>
+      <fieldset>
+        <legend>Billing Adress</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <fieldset>
+        <legend>Payment</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+    </form>
+    <form>
+      <input type="hidden" name="course-id" value="1234" />
+      <!--para el servidor, nunca guardes sensitive values aqui porque se ven en el browser, usamos hidden for store the ID of content being edited.-->
+    </form>
+    <form>
+      <input
+        type="text"
+        required
+        minlength="3"
+        maxlength="10"
+      /><!--usa el maxlength sobretodo-->
+      <button type="submit">Submit</button>
+      <input type="number" required min="0" max="5" />
+      <button type="submit">Submit</button>
+    </form>
+    <form action="https://formspree.io/f/meozrrnw" method="POST"> <!--method: how we are sending the data-->
+      <input type="text" placeholder="Name" name="name"/>
+      <input type="email" placeholder="Email" name="email"/>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>
