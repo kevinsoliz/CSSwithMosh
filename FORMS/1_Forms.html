@@ -30,32 +30,42 @@
       <input type="password" />
       <input type="date" />
       <input type="email" />
-      <textarea >text</textarea>
-      <input type="text" value="moni@gmail.com">
-      <input type="text" placeholder="email">
-      <input type="text" readonly value=".......">
-      <input type="text" disabled>
-      <input type="email" maxlength="5" placeholder="solo 5 letras">
-      <input type="email" autofocus> <!-- para logins -->
+      <textarea>text</textarea>
+      <input type="text" value="moni@gmail.com" />
+      <input type="text" placeholder="email" />
+      <input type="text" readonly value="......." />
+      <input type="text" disabled />
+      <input type="email" maxlength="5" placeholder="solo 5 letras" />
+      <input type="email" autofocus />
+      <!-- para logins -->
       <textarea>El value va dentro de las etiquetas.</textarea>
     </form>
     <!--Sugerencias: -->
-    <form >
-        <input type="text" list="countries" autocomplete="off">
-        <datalist id="countries">
-            <option data-value="1">Australia</option> <!--el id para el servidor-->
-            <option>Canada</option>
-            <option>India</option>
-            <option>United</option>
-        </datalist>
+    <form>
+      <input type="text" list="countries" autocomplete="off" />
+      <datalist id="countries">
+        <option data-value="1">Australia</option>
+        <!--el id para el servidor-->
+        <option>Canada</option>
+        <option>India</option>
+        <option>United</option>
+      </datalist>
     </form>
     <form>
-      <select multiple>
-        <option value="">Select a course...</option>
-        <option value="1" selected >HTML</option>
-        <option value="2">CSS</option>
-        <option value="3">JAVAS</option>
-      </select> 
+      <select>
+        <optgroup label="Front-end Courses">
+          <option value="">Select a course...</option>
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JAVAS</option>
+        </optgroup>
+        <optgroup label="Back-end Courses">
+          <option value="">Select a course...</option>
+          <option value="1">Node</option>
+          <option value="2">ASP</option>
+          <option value="3">Django</option>
+        </optgroup>
+      </select>
     </form>
   </body>
 </html>
