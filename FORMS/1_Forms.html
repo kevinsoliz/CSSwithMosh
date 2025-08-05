@@ -114,5 +114,11 @@
     <form>
         <input type="hidden" name="course-id" value="1234"> <!--para el servidor, nunca guardes sensitive values aqui porque se ven en el browser, usamos hidden for store the ID of content being edited.-->
     </form>
+    <form>
+        <input type="text" required minlength="3" maxlength="10"><!--usa el maxlength sobretodo-->
+        <button type="submit">Submit</button>
+        <input type="number" required min="0" max="5">
+        <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
