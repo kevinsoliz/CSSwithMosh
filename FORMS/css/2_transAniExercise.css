@@ -33,6 +33,7 @@ body {
 
 }
 .card__footer {
+  align-items: center;
   background: #2a7b9b;
   background: linear-gradient(
     93deg,
@@ -40,19 +41,18 @@ body {
     rgba(87, 199, 133, 1) 0%,
     rgba(241, 242, 157, 1) 100%
   );
-  display: flex;
   color: white;
-  padding: 10px 30px;
   column-gap: 15px;
+  display: flex;
   height: 100%;
-  align-items: center;
+  padding: 10px 30px;
 }
 .footer__pic {
-  width: 60px;
-  height: 60px;
   border-radius: 50%;
   border: 3px solid white;
+  height: 60px;
   transition: transform 0.15s ease-in-out;
+  width: 60px;
 }
 
 .footer__pic:hover {

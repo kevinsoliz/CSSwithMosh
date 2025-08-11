@@ -8,52 +8,52 @@ html * {
   box-sizing: inherit;
 }
 body {
-  height: 100vh;
+  align-items: center;
   background-color: rgb(228, 232, 235);
   display: flex;
   flex-direction: row;
+  height: 100vh;
   justify-content: center;
-  align-items: center;
 }
 
 form {
-  width: 200px;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   row-gap: 0.5rem;
+  width: 200px;
 }
 
 input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ced4da;
   border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 0.5rem;
   transition: border-color 0.5s, box-shadow 0.5s;
+  width: 100%;
 }
 input:focus {
-  outline: 0;
   border-color: #ced4da;
   box-shadow: 0 0 0px 4px #b9d3fa;
+  outline: 0;
 }
 button {
-  width: 100%;
   background-color: dodgerblue;
-  padding: 0.3rem;
   border-radius: 1rem;
   border: none;
   color: white;
+  padding: 0.3rem;
+  width: 100%;
 }
 
 h1 {
   text-align: center;
 }
 .rememberMe {
-  width: 100%;
+  column-gap: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 0.5rem;
+  width: 100%;
 }
 input[type="checkbox"] {
   display: inline;
